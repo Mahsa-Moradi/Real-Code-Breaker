@@ -51,8 +51,8 @@
   box-shadow: 1px 1px 15px rgb(70, 70, 70);
   color: white;
 }
-.circle{
-    border: navajowhite;
+.circle {
+  border: navajowhite;
 }
 /* ........ timer */
 .timer {
@@ -63,18 +63,17 @@
   justify-content: space-between;
   background-color: yellowgreen;
   color: rgb(255, 255, 255);
-
 }
 .timer > span {
   color: rgb(255, 255, 255);
 }
-.App{
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
+.App {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
 }
-.btn-wrapper > button{
-    margin-left: 5px;
+.btn-wrapper > button {
+  margin-left: 5px;
 }
 /* ........ play */
 .play {
@@ -118,7 +117,7 @@
   background-color: rgb(51, 255, 15);
 }
 .info span:nth-child(2) {
-    background-color: rgb(255, 102, 0);
+  background-color: rgb(255, 102, 0);
 }
 .info span:nth-child(3) {
   background-color: rgb(191, 0, 255);
@@ -132,8 +131,50 @@
 .info span:nth-child(6) {
   background-color: rgb(255, 102, 0);
   background-color: rgb(218, 252, 0);
-
 }
 
-
+/* .......... drop and drag */
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+#drag1{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 /* .......... timer */
+.Appp {
+  margin: 2rem;
+  text-align: center;
+}
+.Appp h1 {
+  color: #07F;
+}
+.drag-drop-zone {
+  padding: 2rem;
+  text-align: center;
+  background: #07F;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px #C0C0C0;
+}
+.drag-drop-zone p {
+  color: #FFF;
+}
+.drag-drop-zone.inside-drag-area {
+  opacity: 0.7;
+}
+.dropped-files li {
+  color: #07F;
+  padding: 3px;
+  text-align: left;
+  font-weight: bold;
+}

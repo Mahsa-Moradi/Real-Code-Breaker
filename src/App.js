@@ -1,10 +1,12 @@
 "use client";
+// import React, { Game } from 'react';
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./page-module.css";
+import DragAndDrop from "./DragAndDrop.js";
+// import "./DragAndDrop.js";
 // import logo from "./logo.svg";
 // import "./App.css";
-
 // .............  Circle
 function Circle({ value }) {
   return <input className="circle">{value}</input>;
@@ -13,28 +15,6 @@ function Circle({ value }) {
 function Button({ value }) {
   return <button className="button">hello</button>;
 }
-// drop and drag
-// function dropAndDrag() {
-//   const [parent, setParent] = useState(null);
-//   const draggable = (
-//     <Draggable id="draggable">
-//       Go ahead, drag me.
-//     </Draggable>
-//   );
-
-//   return (
-//     <DndContext onDragEnd={handleDragEnd}>
-//       {!parent ? draggable : null}
-//       <Droppable id="droppable">
-//         {parent === "droppable" ? draggable : 'Drop here'}
-//       </Droppable>
-//     </DndContext>
-//   );
-
-//   function handleDragEnd({over}) {
-//     setParent(over ? over.id : null);
-//   }
-// }
 // .............  Timer
 // const Timer = () => {
 //   const [hours, setHours] = useState(0);
@@ -44,7 +24,6 @@ function Button({ value }) {
 //     <div className="timer "></div>
 //   )
 // };
-//
 // timeeeeeeeeeeeeeeeeeeeeeeeeeer
 // Define the main App component
 function App() {
@@ -96,6 +75,21 @@ function App() {
 
 //end timer
 function Frame(Circles) {
+  // const [data,setData] = useState('null');
+  const [,] = useState();
+
+  function allowDrop(ev) {
+    ev.preventDefault();
+  }
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+
+  function drop(ev) {
+    const [data,setData] = useState('ev.dataTransfer.getData("text")');
+    ev.preventDefault();
+    ev.target.setData(data);
+  }
   return (
     <div className="container">
       <div className="frameGame">
@@ -224,12 +218,58 @@ function Frame(Circles) {
           <span>6</span>
         </div>
       </div>
+
+      {/* div test */}
+      <p>Drag the W3Schools image into the rectangle:</p>
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <img
+        id="drag1"
+        src="img_logo.gif"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="336"
+        height="69"
+      ></img>
+      {/*  */}
     </div>
   );
 }
-
-// ************************************ main code
+//  ************************************ main code
 function Game() {
-  return <div>{<Frame />}</div>;
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case "SET_DROP_DEPTH":
+        return { ...state, dropDepth: action.dropDepth };
+      case "SET_IN_DROP_ZONE":
+        return { ...state, inDropZone: action.inDropZone };
+      case "ADD_FILE_TO_LIST":
+        return { ...state, fileList: state.fileList.concat(action.files) };
+      default:
+        return state;
+    }
+  };
+  // const { data, dispatch } = props;
+  const [data, dispatch] = React.useReducer(reducer, {
+    dropDepth: 0,
+    inDropZone: false,
+    fileList: [],
+  });
+
+  return (
+    <>
+      <div>{<Frame />}</div>
+
+      <div className="Appp">
+        <h1>React drag-and-drop component</h1>
+        <DragAndDrop data={data} dispatch={dispatch} />
+        {/* <DragAndDrop /> */}
+        <ol className="dropped-files">
+          {data.fileList.map((f) => {
+            return <li key={f.name}>{f.name}</li>;
+          })}
+        </ol>
+      </div>
+    </>
+  );
 }
 export default Game;
