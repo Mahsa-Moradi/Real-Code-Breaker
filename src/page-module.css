@@ -1,0 +1,139 @@
+/* ............................. body */
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(43, 41, 41);
+}
+.frameGame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  background-color: rgb(8, 2, 36);
+  padding: 50px;
+}
+.result {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.resultCircle,
+.info {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px;
+}
+.resultCircle span,
+.info > span,
+.row > span,
+.circle,
+.whiteBlack,
+.number10 {
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  /* border: 1px solid rgb(15, 54, 15); */
+  background-color: rgb(0, 9, 26);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 15px rgb(70, 70, 70);
+  color: white;
+}
+.circle{
+    border: navajowhite;
+}
+/* ........ timer */
+.timer {
+  margin: 50px 0;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: yellowgreen;
+  color: rgb(255, 255, 255);
+
+}
+.timer > span {
+  color: rgb(255, 255, 255);
+}
+.App{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.btn-wrapper > button{
+    margin-left: 5px;
+}
+/* ........ play */
+.play {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 5px;
+}
+/* .row > span{display: ;} */
+.whiteBlack,
+.number10 {
+  margin-left: 50px;
+  display: grid;
+  grid-template-areas: "o o" "o o";
+  gap: 5px;
+}
+.whiteBlack > span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px;
+  background-color: rgb(208, 208, 208);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  grid-template-areas: "f f" "g g";
+}
+.info {
+  white-space: nowrap;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+.info span:nth-child(1) {
+  background-color: rgb(51, 255, 15);
+}
+.info span:nth-child(2) {
+    background-color: rgb(255, 102, 0);
+}
+.info span:nth-child(3) {
+  background-color: rgb(191, 0, 255);
+}
+.info span:nth-child(4) {
+  background-color: rgb(23, 15, 255);
+}
+.info span:nth-child(5) {
+  background-color: rgb(255, 0, 0);
+}
+.info span:nth-child(6) {
+  background-color: rgb(255, 102, 0);
+  background-color: rgb(218, 252, 0);
+
+}
+
+
+/* .......... timer */
