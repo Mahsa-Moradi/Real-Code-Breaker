@@ -134,47 +134,31 @@
 }
 
 /* .......... drop and drag */
-#div1 {
-  width: 350px;
-  height: 70px;
+.styleItem {
+  height: 100vh;
+  background-color: rgb(218, 252, 0);
+
+}
+.stylerow {
+  height: 100%;
+}
+.stylecol {
+  background-color: rgb(255, 102, 0);
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+}
+/* .......... */
+.drag-drop-container {
+  height: 100%;
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  overflow-y: auto;
+}
+
+.item {
+  margin: 20px;
   padding: 10px;
-  border: 1px solid #aaaaaa;
-}
-#drag1{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: blueviolet;
-  text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-/* .......... timer */
-.Appp {
-  margin: 2rem;
-  text-align: center;
-}
-.Appp h1 {
-  color: #07F;
-}
-.drag-drop-zone {
-  padding: 2rem;
-  text-align: center;
-  background: #07F;
-  border-radius: 0.5rem;
-  box-shadow: 5px 5px 10px #C0C0C0;
-}
-.drag-drop-zone p {
-  color: #FFF;
-}
-.drag-drop-zone.inside-drag-area {
-  opacity: 0.7;
-}
-.dropped-files li {
-  color: #07F;
-  padding: 3px;
-  text-align: left;
-  font-weight: bold;
+  border: 1px solid blue;
+  cursor: pointer;
 }
