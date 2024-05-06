@@ -16,10 +16,10 @@ function Game() {
       {/* ................................................... */}
       <div className="container-fluid styleItem">
         <div className="row stylerow">
-          <div className="col-6 stylecol" >gryt
+          <div className="col-6 stylecol">
             <DragList />
           </div>
-          <div className="col-6 stylecol">rt
+          <div className="col-6 stylecol">
             <DropList />
           </div>
         </div>
