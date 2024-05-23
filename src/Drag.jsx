@@ -30,7 +30,7 @@ const Drag = props => {
     const dragEnd = () => setIsDragging(false);
 
     return (
-        <div style={isDragging ? draggingStyle : {}} draggable onDragStart={startDrag} onDragEnd={dragEnd}>
+        <div style={{color:"violet" ,...(isDragging ? draggingStyle : {})}} draggable onDragStart={startDrag} onDragEnd={dragEnd}>
             {props.children}
         </div>
     );

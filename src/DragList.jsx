@@ -3,20 +3,13 @@ import Drag from "./Drag";
 import logo from "./logo.png";
 function Draglist({ color, value }) {
   // options: [],
-  const items = {
-    options: [
-      {
-        id: 1,
-      },
-      {
-        id: 2,
-      },
-    ],
-  };
+  const items =["1"] 
+
+
   return (
     <div className="drag-drop-container">
-      {/* <p>{color}</p>
-            <div className="info">
+      <p>{color}</p>
+           {/*  <div className="info">
             <span>{value}</span>
             <span>{value}</span>
             <span>{value}</span>
@@ -24,18 +17,18 @@ function Draglist({ color, value }) {
             <span>{value}</span>
             <span>{value}</span>
           </div> */}
-      {items.options.map((option, index, value, i) => (
+      {items.map((item, index, value,i) => (
         <Drag
-          value={index[i]}
-          // id={"option" + option.id}
-          // key={value}
-          // key={index}
-          // style={option.style}
-          // dataItem={option}
-          // dragImage={logo}
-          // dropEffect="link"
+        value={index[i]}
+        // id={"option" + option.id}
+        // key={value}
+        // key={index}
+        // style={option.style}
+        // dataItem={option}
+        // dragImage={logo}
+        // dropEffect="link"
         >
-          <div className="item">{option}</div>
+          <div className="item">{item}</div>
         </Drag>
       ))}
     </div>

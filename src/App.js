@@ -27,8 +27,6 @@ function Game() {
             <DragList value={"4"} />
             <DragList value={"5"} />
             <DragList value={"6"} />
-            <DragList value={"7"} />
-            <DragList value={"8"} />
           </div>
           <div className="col-6 stylecol">
             <DropList />
