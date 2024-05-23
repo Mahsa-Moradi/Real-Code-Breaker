@@ -13,11 +13,18 @@ function Game() {
   return (
     <>
       <div>{<Frame />}</div>
-      {/* ................................................... */}
+      {/* ............................................. */}
       <div className="container-fluid styleItem">
         <div className="row stylerow">
           <div className="col-6 stylecol">
+            <DragList color={"green"} />
+            {/* <DragList color={"red"}  />
             <DragList />
+            <DragList />
+            <DragList />
+            <DragList />
+            <DragList />
+            <DragList /> */}
           </div>
           <div className="col-6 stylecol">
             <DropList />

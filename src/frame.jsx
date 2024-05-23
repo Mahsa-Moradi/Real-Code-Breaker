@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Draglist from "./DragList";
 // import App from "./App.js";
 
 // ******************************  Circle
@@ -180,14 +181,15 @@ function Frame(Circles) {
             {/*  */}
           </div>
           {/* 2 */}
-          <div className="info">
+          <Draglist/>
+          {/* <div className="info">
             <span>1</span>
             <span>2</span>
             <span>3</span>
             <span>4</span>
             <span>5</span>
             <span>6</span>
-          </div>
+          </div> */}
         </div>
       </div>
     );
