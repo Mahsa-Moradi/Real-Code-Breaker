@@ -1,15 +1,14 @@
 import React from "react";
 import Drag from "./Drag";
 import logo from "./logo.png";
-function Draglist({ color, value }) {
+function Draglist({ color, value,i }) {
   // options: [],
-  const items =["1"] 
-
+  const items = ["1"];
 
   return (
     <div className="drag-drop-container">
       <p>{color}</p>
-           {/*  <div className="info">
+      {/*  <div className="info">
             <span>{value}</span>
             <span>{value}</span>
             <span>{value}</span>
@@ -17,16 +16,18 @@ function Draglist({ color, value }) {
             <span>{value}</span>
             <span>{value}</span>
           </div> */}
-      {items.map((item, index, value,i) => (
+      {items.map((item, index, value, i) => (
         <Drag
-        value={index[i]}
-        // id={"option" + option.id}
-        // key={value}
-        // key={index}
-        // style={option.style}
-        // dataItem={option}
-        // dragImage={logo}
-        // dropEffect="link"
+          value={index[i]}
+          // id={"option" + option.id}
+          // key={value[i]}
+          // key={index}
+          style={item[i]}
+
+          // style={option.style}
+          // dataItem={option}
+          // dragImage={logo}
+          // dropEffect="link"
         >
           <div className="item">{item}</div>
         </Drag>

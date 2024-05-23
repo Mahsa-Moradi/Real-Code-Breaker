@@ -107,16 +107,57 @@
   -o-border-radius: 50%;
   grid-template-areas: "f f" "g g";
 }
+/* .......... drop and drag */
+.styleItem {
+  height: 100vh;
+  background-color: rgb(59, 59, 59);
+
+}
+.stylerow {
+  height: 100%;
+}
+.stylecol {
+  /* background-color: rgb(255, 102, 0); */
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+}
 .drag-drop-container{
   white-space: nowrap;
   /* display: flex; */
   font-size: 20px;
   font-weight: bold;
   width: 100%;
-  border: 1px solid rgb(232, 9, 9);
+  border: 1px solid rgb(232, 130, 130);
   overflow-y: auto;
-  
 }
+.drag-drop-container:nth-child(1) {
+  background-color: rgb(51, 255, 15);
+}
+.drag-drop-container:nth-child(2) {
+  background-color: rgb(74, 121, 239);
+}
+.item {
+  background-color: rgb(0, 72, 255);
+
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid blue;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  white-space: nowrap;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+/* ................... */
 .info span:nth-child(1) {
   /* background-color: rgb(51, 255, 15); */
 }
@@ -137,39 +178,5 @@
   background-color: rgb(218, 252, 0);
 }
 
-/* .......... drop and drag */
-.styleItem {
-  height: 100vh;
-  background-color: rgb(218, 252, 0);
+/* ****************************************** */
 
-}
-.stylerow {
-  height: 100%;
-}
-.stylecol {
-  background-color: rgb(255, 102, 0);
-  height: 100%;
-  width: 50%;
-  padding: 20px;
-}
-/* .......... */
-
-
-.item {
-  margin: 20px;
-  padding: 10px;
-  border: 1px solid blue;
-  cursor: pointer;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  white-space: nowrap;
-  display: flex;
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  width: 30px;
-  height: 30px;
-}
