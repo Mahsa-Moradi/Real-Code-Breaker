@@ -17,14 +17,18 @@ function Game() {
       <div className="container-fluid styleItem">
         <div className="row stylerow">
           <div className="col-6 stylecol">
-            <DragList color={"green"} />
-            {/* <DragList color={"red"}  />
-            <DragList />
-            <DragList />
-            <DragList />
-            <DragList />
-            <DragList />
-            <DragList /> */}
+            <DragList
+              value={"1"}
+              color={"green"}
+              backgroundColor={"rgb(23, 15, 255)"}
+            />
+            <DragList value={"2"} />
+            <DragList value={"3"} />
+            <DragList value={"4"} />
+            <DragList value={"5"} />
+            <DragList value={"6"} />
+            <DragList value={"7"} />
+            <DragList value={"8"} />
           </div>
           <div className="col-6 stylecol">
             <DropList />
