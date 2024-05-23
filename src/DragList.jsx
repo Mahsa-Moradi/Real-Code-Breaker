@@ -1,13 +1,29 @@
 import React from "react";
 import Drag from "./Drag";
 import logo from "./logo.png";
-function Draglist({ color, value,i }) {
+function Draglist({ color, value, i }) {
   // options: [],
-  const items = ["1"];
-
+  // const items = ["1"];
+  // const items = [
+  //   { key: 1, value: 11 },
+  //   { key: 2, value: 22 },
+  //   { key: 3, value: 33 },
+  //   { key: 4, value: 44 },
+  //   { key: 5, value: 55 },
+  //   { key: 6, value: 66 },
+  // ];
+   const items = ["1","2","3","4","5","6"];
+// const items = [
+  //   { value: 1, backGroundColor: 'red' },
+  //   { value: 2, backGroundColor: 'yellow'},
+  //   { value: 3, backGroundColor: 'bluw'},
+  //   { value: 4, backGroundColor: 'green' },
+  //   { value: 5, backGroundColor: 'orang' },
+  //   { value: 6, backGroundColor: 'violet' },
+  // ];
   return (
     <div className="drag-drop-container">
-      <p>{color}</p>
+      {/* <p>{reformattedArray}</p> */}
       {/*  <div className="info">
             <span>{value}</span>
             <span>{value}</span>
@@ -16,6 +32,7 @@ function Draglist({ color, value,i }) {
             <span>{value}</span>
             <span>{value}</span>
           </div> */}
+
       {items.map((item, index, value, i) => (
         <Drag
           value={index[i]}
@@ -30,6 +47,8 @@ function Draglist({ color, value,i }) {
           // dropEffect="link"
         >
           <div className="item">{item}</div>
+          {/* <div className="item">{item[i]}</div> */}
+
         </Drag>
       ))}
     </div>
