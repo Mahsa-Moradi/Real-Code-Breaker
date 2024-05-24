@@ -18,8 +18,8 @@ function Draglist({ color, value, i }) {
     { value: 2, backGroundColor: 'yellow'},
     { value: 3, backGroundColor: 'bluw'},
     { value: 4, backGroundColor: 'green' },
-    { value: 5, backGroundColor: 'orang' },
-    { value: 6, backGroundColor: 'violet' },
+    // { value: 5, backGroundColor: 'orang' },
+    // { value: 6, backGroundColor: 'violet' },
   ];
   return (
     <div className="drag-drop-container">
