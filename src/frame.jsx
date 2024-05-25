@@ -168,7 +168,6 @@ function Frame(Circles) {
           </div>
           {/* 6 */}
           <div className="row">
-           
             {/* <Circle value={Draglist} /> */}
             <Circle value={Circles[2]} />
             <Circle value={Circles[3]} />
@@ -213,7 +212,11 @@ function Frame(Circles) {
             </div>
             {/* ..........................Droplist */}
             <div className="col-6 stylecol color">
-              <DropList />
+              {/* 1 */}
+              <div className="row">
+                <DropList />
+                jjg
+              </div>
             </div>
           </div>
         </div>

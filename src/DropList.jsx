@@ -1,7 +1,10 @@
 import React from "react";
 import DropTarget from "./DropTarget";
-
-export default () => {
+import frame from "./frame";
+function Circle({ value }) {
+    return <input className="circle">{value}</input>;
+  }
+export default (Circles) => {
     const [items, setItems] = React.useState([]);
 
     const itemDropped = item => setItems([...items, item]);
@@ -11,9 +14,18 @@ export default () => {
                 {items.map(item => (
                     <div key={item} className="item">
                         {item}
+ {/* 2 */}
+ <div className="row">
+            {/* <Circle value={Circles[1]} /> */}
+            
+            
+          </div>
                     </div>
                 ))}
             </div>
         </DropTarget>
+        // ........
+
+        
     );
 };
