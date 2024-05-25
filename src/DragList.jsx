@@ -14,10 +14,10 @@ function Draglist({ color, value, i }) {
   // ];
   // const items = ["1", "2", "3", "4", "5", "6"];
   const items = [
-    { value: 1, backGroundColor: 'red' },
-    { value: 2, backGroundColor: 'yellow'},
-    { value: 3, backGroundColor: 'bluw'},
-    { value: 4, backGroundColor: 'green' },
+    { value: 1, backGroundColor: "red" },
+    { value: 2, backGroundColor: "yellow" },
+    { value: 3, backGroundColor: "bluw" },
+    { value: 4, backGroundColor: "green" },
     // { value: 5, backGroundColor: 'orang' },
     // { value: 6, backGroundColor: 'violet' },
   ];
@@ -27,26 +27,22 @@ function Draglist({ color, value, i }) {
       {/*  <div className="info">
             <span>{value}</span>
             <span>{value}</span>
-            <span>{value}</span>
-            <span>{value}</span>
-            <span>{value}</span>
-            <span>{value}</span>
           </div> */}
 
       {items.map((item, value, i) => (
         <Drag
+          key={item.value[1]}
+          style={item.backGroundColor[2]}
           // value={index[1]}
           // id={"option" + option.id}
-          key={item.value[1]}
           // key={index}
-          style={item.backGroundColor[2]}
           // style={option.style}
           // dataItem={option}
           // dragImage={logo}
           // dropEffect="link"
         >
           {/* <div className="item">{item}</div> */}
-          <div className="item">{item[i]}</div>
+          <div className="item">number{item[i]}</div>
         </Drag>
       ))}
     </div>
