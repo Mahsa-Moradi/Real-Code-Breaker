@@ -200,7 +200,7 @@ function Frame(Circles) {
               {/* <DragList value={"6"} /> */}
               {/* ..........................Draglist */}
               <Draglist />
-              {/* <Draglist /> */}
+              <DropList />
 
               {/* <div className="info">
             <span>1</span>
@@ -211,104 +211,11 @@ function Frame(Circles) {
             <span>6</span>
           </div> */}
             </div>
-            {/* ..........................Droplist */}
-            <div className="col-6 stylecol color">
-              {/* 1 */}
-              <div className="row">
-                {/* 3a play*/}
-                <div className="play">
-                  {/* 1 */}
-                  <div className="row">
-                    <Circle value={Circles[1]} />
-                    <Circle value={Circles[2]} />
-                    <Circle value={Circles[3]} />
-                    <Circle value={Circles[4]} />
-                    {/* div-play */}
-                    <div className="whiteBlack">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  {/* 2 */}
-                  <div className="row">
-                    <Circle value={Circles[1]} />
-                    <Circle value={Circles[2]} />
-                    <Circle value={Circles[3]} />
-                    <Circle value={Circles[4]} />
-                    {/* div-play */}
-                    <div className="whiteBlack">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  {/* 3 */}
-                  <div className="row">
-                    <Circle value={Circles[1]} />
-                    <Circle value={Circles[2]} />
-                    <Circle value={Circles[3]} />
-                    <Circle value={Circles[4]} />
-                    {/* div-play */}
-                    <div className="whiteBlack">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  {/* 4 */}
-                  <div className="row">
-                    <Circle value={Circles[1]} />
-                    <Circle value={Circles[2]} />
-                    <Circle value={Circles[3]} />
-                    <Circle value={Circles[4]} />
-                    {/* div-play */}
-                    <div className="whiteBlack">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  {/* 5 */}
-                  <div className="row">
-                    <Circle value={Circles[1]} />
-                    <Circle value={Circles[2]} />
-                    <Circle value={Circles[3]} />
-                    <Circle value={Circles[4]} />
-                    {/* div-play */}
-                    <div className="whiteBlack">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  {/* 6 */}
-                  <div className="row">
-                    {/* <Circle value={Draglist} /> */}
-                    <Circle value={Circles[2]} />
-                    <Circle value={Circles[3]} />
-                    <Circle value={Circles[4]} />
-                    <Circle value={Circles[4]} />
-
-                    {/* div-play */}
-                    <div className="whiteBlack">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                  </div>
-                  {/*  */}
-                </div>
-                {/* ++++++++++++++++++++++++++++++++++++++++++++ */}
-                <DropList />
-              </div>
-            </div>
+            {/* ...............  bodydrop */}
+            {/* <div className="col-6 stylecol bodydrop">
+              <DropList />
+            </div> */}
+            {/* <DropList /> */}
           </div>
         </div>
       </div>

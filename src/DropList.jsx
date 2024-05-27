@@ -10,11 +10,13 @@ export default () => {
     <>
       {/* .................... */}
       <DropTarget onItemDropped={itemDropped} dropEffect="link">
+        {/* <p >hellopppppppppppp</p> */}
         {/*  ناحیه رها کردن */}
         <div className="drag-drop-container  ">
           {items.map((item) => (
             <div key={item} className="item">
-             <input type="text">hello</input>
+              {/* harchi dakhele keshidan dayereh darim */}
+            {/* <p className="bodydrop">oo</p> */}
             </div>
           ))}
         </div>

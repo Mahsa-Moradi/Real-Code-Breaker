@@ -39,10 +39,10 @@ function Draglist({ color, value, i }) {
           // style={option.style}
           // dataItem={option}
           // dragImage={logo}
-          // dropEffect="link"
+          dropEffect="link"
         >
           {/* <div className="item">{item}</div> */}
-          <div className="item">number{item[i]}</div>
+          <div className="item">1{item[i]}</div>
         </Drag>
       ))}
     </div>
