@@ -129,7 +129,9 @@
   flex-direction: column;
 }
 .drag-drop-container {
-  /* white-space: nowrap; */
+  width: 50px;
+  height: 50px;
+  white-space: nowrap;
   display: flex;
   flex-direction: row;
   font-size: 20px;
@@ -150,10 +152,10 @@
   background-color: rgb(255, 0, 0);
 } */
 .item {
-  background-color: rgb(217, 255, 47);
+  background-color: rgb(0, 0, 0);
   margin: 20px;
   padding: 10px;
-  border: 1px solid blue;
+  border: 1px solid rgb(255, 0, 0);
   cursor: pointer;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -168,12 +170,12 @@
   width: 50px;
   height: 50px;
 }
-.item:nth-child(2) {
-  background-color: rgb(91, 105, 152);
-}
+/* .item:nth-child(2) {
+  background-color: rgb(96, 152, 91);
+} */
 /* ................... */
 .info span:nth-child(1) {
-  background-color: rgb(51, 255, 15);
+  background-color: rgb(17, 255, 0);
 }
 .info span:nth-child(2) {
   background-color: rgb(255, 102, 0);
@@ -198,4 +200,5 @@
   width: 100%;
   height: 100%;
   color: white;
+  overflow: hidden;
 }

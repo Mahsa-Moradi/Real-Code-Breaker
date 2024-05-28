@@ -7,7 +7,7 @@ import DropList from "./DropList";
 
 // ******************************  Circle
 function Circle({ value }) {
-  return <input className="circle">{value}</input>;
+  return <div className="circle"><DropList /></div>;
 }
 // *****************************  Button
 function Button({ value }) {
@@ -200,8 +200,7 @@ function Frame(Circles) {
               {/* <DragList value={"6"} /> */}
               {/* ..........................Draglist */}
               <Draglist />
-              <DropList />
-
+              
               {/* <div className="info">
             <span>1</span>
             <span>2</span>
