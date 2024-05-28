@@ -27,7 +27,7 @@
 .info {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
-  gap: 5px;
+  gap: 50px;
 }
 .resultCircle span,
 .info > span,
@@ -53,6 +53,7 @@
 }
 .circle {
   border: navajowhite;
+  background-color: red;
 }
 /* ........ timer */
 .timer {
@@ -83,7 +84,7 @@
 .row {
   display: flex;
   margin-bottom: 20px;
-  gap: 5px;
+  gap: 50px;
 }
 /* .row > span{display: ;} */
 .whiteBlack,
@@ -129,8 +130,8 @@
   flex-direction: column;
 }
 .drag-drop-container {
-  width: 50px;
-  height: 50px;
+  /* width: 100px; */
+  height: 100px;
   white-space: nowrap;
   display: flex;
   flex-direction: row;
@@ -138,7 +139,7 @@
   font-weight: bold;
   width: 100%;
   border-top: 1px solid rgb(232, 130, 130);
-  /* background-color: rgb(86, 56, 16); */
+  background-color: rgb(86, 56, 16);
   /* content: "hello"; */
 }
 .drag-drop-container:nth-child(1)::before {
@@ -169,6 +170,7 @@
   color: white;
   width: 50px;
   height: 50px;
+
 }
 /* .item:nth-child(2) {
   background-color: rgb(96, 152, 91);

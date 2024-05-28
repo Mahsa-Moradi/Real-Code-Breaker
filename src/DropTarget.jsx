@@ -40,9 +40,9 @@ const DropTarget = (props) => {
     setIsOver(true);
   };
   // ..................
-  function Circle({ value }) {
-    return <input className="circle">{value}</input>;
-  }
+  // function Circle({ value }) {
+  //   return <input className="circle">{value}</input>;
+  // }
   //
   const dragLeave = () => setIsOver(false);
 
@@ -55,7 +55,7 @@ const DropTarget = (props) => {
       style={{
         width: "100%",
         height: "100%",
-        color: "green",
+        color: "yellow",
         ...(isOver ? insideStyle : {}),
       }}
       // style={{ width: "5%", height: "5%" , color:"yellow",borderRadius:"50%", backgroundColor:"green", ...(isOver ? insideStyle : {}) }}
