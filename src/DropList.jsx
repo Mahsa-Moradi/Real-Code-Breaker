@@ -10,7 +10,7 @@ export default () => {
     <>
       {/* .................... */}
       <DropTarget onItemDropped={itemDropped} dropEffect="link">
-        {/* <p >hellopppppppppppp</p> */}
+        <p >1</p>
         {/*  ناحیه رها کردن */}
         <div className="drag-drop-container  ">
           {items.map((item) => (

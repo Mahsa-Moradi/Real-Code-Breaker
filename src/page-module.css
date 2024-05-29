@@ -110,14 +110,14 @@
 }
 /* .......... drop and drag */
 .styleItem {
-  height: 100vh;
-  /* background-color: rgb(59, 59, 59); */
+  /* height: 100vh; */
+  background-color: rgb(59, 59, 59);
 }
-.stylerow {
+/* .stylerow {
   height: 100%;
-}
+} */
 .stylecol {
-  /* background-color: rgb(255, 102, 0); */
+  background-color: rgb(255, 102, 0);
   /* height: 100%; */
   /* width: 50%; */
   padding: 20px;
@@ -131,14 +131,14 @@
 }
 .drag-drop-container {
   /* width: 100px; */
-  height: 100px;
+  height: 100%;
   white-space: nowrap;
   display: flex;
   flex-direction: row;
   font-size: 20px;
   font-weight: bold;
   width: 100%;
-  border-top: 1px solid rgb(232, 130, 130);
+  /* border-top: 1px solid rgb(232, 130, 130); */
   background-color: rgb(86, 56, 16);
   /* content: "hello"; */
 }
@@ -147,13 +147,13 @@
   color: white;
   background-color: rgb(255, 15, 15);
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 /* .drag-drop-container:nth-child(2) {
   background-color: rgb(255, 0, 0);
 } */
 .item {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(34, 255, 0);
   margin: 20px;
   padding: 10px;
   border: 1px solid rgb(255, 0, 0);
@@ -170,6 +170,11 @@
   color: white;
   width: 50px;
   height: 50px;
+  object-fit: cover;
+  /* position: absolute; */
+  top: 700px;
+  right: 1150px;
+  z-index: 50;
 
 }
 /* .item:nth-child(2) {
